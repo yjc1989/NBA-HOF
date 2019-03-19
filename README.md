@@ -1,4 +1,4 @@
-# Machine Learning Applications on NBA Players' Statistics - What Matters Most to the Hall of Fame Committees?
+# Machine Learning Applications on NBA Players' Statistics - How you can make the Hall of Fame
 
 ##### Vickram N. Premakumar & Yuan-Chi Yang
 
