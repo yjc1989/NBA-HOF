@@ -3,7 +3,7 @@
 ##### Vickram N. Premakumar & Yuan-Chi Yang
 
 <p align="center">
-  <img src="https://github.com/yjc1989/NBA-HOF/blob/master/FINAL/figures/neural-network/two-rep-feature.png?raw=true" alt="Centered Image"/>
+  <img src="https://github.com/yjc1989/NBA-HOF/blob/master/figures/neural-network/two-rep-feature.png?raw=true" alt="Centered Image"/>
 </p>
 
 ## Introduction
@@ -55,13 +55,13 @@ We first study the learning curves for the logistic regression models using only
 Learning Curves
 
 <p align="center">
-  <img src="https://github.com/yjc1989/NBA-HOF/blob/master/FINAL/figures/feature-selection-logistic-regression/learn-curve-combine.png?raw=true" alt="Centered Image"/>
+  <img src="https://github.com/yjc1989/NBA-HOF/blob/master/figures/feature-selection-logistic-regression/learn-curve-combine.png?raw=true" alt="Centered Image"/>
 </p>
 
 We next plot the cross-validation curve over the number of representing features, aiming at finding the optimal number of representing features. As expected, the optimal model is using only one representing feature, 'AllStar.'
 
 <p align="center">
-  <img src="https://github.com/yjc1989/NBA-HOF/blob/master/FINAL/figures/feature-selection-logistic-regression/cross-validation-number-of-features.png?raw=true" alt="Centered Image"/>
+  <img src="https://github.com/yjc1989/NBA-HOF/blob/master/figures/feature-selection-logistic-regression/cross-validation-number-of-features.png?raw=true" alt="Centered Image"/>
 </p>
 
 ### Logistic Regression Results
@@ -73,13 +73,13 @@ We now present the results for logistic regression models using only one represe
 We first plot the distribution of 'AllStar,' grouping players by Hall of Fame status. According to the figure, a good boundary could be between 'AllStar'=5 and 'AllStar'=6. We also note that the Hall of Famer who has never attended any all-star games is Arvydas Sabonis, who was inducted in recognition of his achievement in international competition rather than outstanding NBA career. As a outlier, we later on drop this data point.
 
 <p align="center">
-  <img src="https://github.com/yjc1989/NBA-HOF/blob/master/FINAL/figures/feature-selection-logistic-regression/distribution-one-rep-feature.png?raw=true" alt="Centered Image"/>
+  <img src="https://github.com/yjc1989/NBA-HOF/blob/master/figures/feature-selection-logistic-regression/distribution-one-rep-feature.png?raw=true" alt="Centered Image"/>
 </p>
 
 Training the model using the whole working data set makes the following predictions on the probability of being inducted based on the number of all-star games attended.
 
 <p align="center">
-  <img src="https://github.com/yjc1989/NBA-HOF/blob/master/FINAL/figures/feature-selection-logistic-regression/probability-one-rep-feature.png?raw=true" alt="Centered Image"/>
+  <img src="https://github.com/yjc1989/NBA-HOF/blob/master/figures/feature-selection-logistic-regression/probability-one-rep-feature.png?raw=true" alt="Centered Image"/>
 </p>
 
 This basically predicts that players who have attended at least six all-star games will be inducted.
@@ -90,13 +90,13 @@ The training performance and the prediction on players who are not yet eligible 
 We now plot the distribution of 'AllStar' and 'VORP,' grouping players according to HOF status. According to the figure, a line connecting ('AllStar','VORP') = (5,60) and (6,0) seems to be a good boundary. We again note that Arvydas Sabonis is an outlier and will be droped for model training.
 
 <p align="center">
-  <img src="https://github.com/yjc1989/NBA-HOF/blob/master/FINAL/figures/feature-selection-logistic-regression/distribution-two-rep-feature.png?raw=true" alt="Centered Image"/>
+  <img src="https://github.com/yjc1989/NBA-HOF/blob/master/figures/feature-selection-logistic-regression/distribution-two-rep-feature.png?raw=true" alt="Centered Image"/>
 </p>
 
 Training the data using the whole working data set determine the following boundary line:
 
 <p align="center">
-  <img src="https://github.com/yjc1989/NBA-HOF/blob/master/FINAL/figures/feature-selection-logistic-regression/classification-two-rep-feature.png?raw=true" alt="Centered Image"/>
+  <img src="https://github.com/yjc1989/NBA-HOF/blob/master/figures/feature-selection-logistic-regression/classification-two-rep-feature.png?raw=true" alt="Centered Image"/>
 </p>
 
 
@@ -157,7 +157,7 @@ We now show predictions on the players who are not yet eligible, assuming their 
 Though the predicted probabilities for the two models on the same player have slightly different values, there is no player who is predicted to be inducted by only one model. That is, the two predicted class boundary classify these players in the same way.
 
 <p align="center">
-  <img src="https://github.com/yjc1989/NBA-HOF/blob/master/FINAL/figures/feature-selection-logistic-regression/prediction-two-rep-feature.png?raw=true" alt="Centered Image"/>
+  <img src="https://github.com/yjc1989/NBA-HOF/blob/master/figures/feature-selection-logistic-regression/prediction-two-rep-feature.png?raw=true" alt="Centered Image"/>
 </p>
 
 Here, the boundary between the brown (predicted HOFer) and light blue (predicted not HOFer) is the class boundary predicted by the model using 'AllStar' and 'VORP,' and the gray dashed line is the class boundary predicted by the model using only 'AllStar.'
@@ -190,7 +190,7 @@ We use the same training data set as logistic regression, searching for the opti
 Training the data using the whole working data set make the following predition on the probability of being inducted into Hall of Fame based on the number of all-star games attended.
 
 <p align="center">
-  <img src="https://github.com/yjc1989/NBA-HOF/blob/master/FINAL/figures/naive-bayes/probability-one-rep-feature.png?raw=true" alt="Centered Image"/>
+  <img src="https://github.com/yjc1989/NBA-HOF/blob/master/figures/naive-bayes/probability-one-rep-feature.png?raw=true" alt="Centered Image"/>
 </p>
 
 This basically predict that players who have attended at least two all-star games will be inducted. This is very different from logistic regression. The performance is also much worse.
@@ -206,7 +206,7 @@ Though the recall is high, the class boundary is too far into the 'HOF' = 0 side
 Training the data using the whole working data set determine the following boundary line:
 
 <p align="center">
-  <img src="https://github.com/yjc1989/NBA-HOF/blob/master/FINAL/figures/naive-bayes/classification-two-rep-feature.png?raw=true" alt="Centered Image"/>
+  <img src="https://github.com/yjc1989/NBA-HOF/blob/master/figures/naive-bayes/classification-two-rep-feature.png?raw=true" alt="Centered Image"/>
 </p>
 
 This figure also shows that the class boundary is too far into the 'HOF' = 0 region, resulting in low precision but high recall. Hence, the performance is also much worse.
@@ -223,7 +223,7 @@ To replicate the complex decision making that goes on between the many humans an
 We construct validation curves for varying depth and sigmoid neurons per layer and find that there is not much improvement in F1 score as we turn up the model complexity. The training F1 score saturates very quickly, which indicates that even the simplest neural network with one layer is fitting the training data very well. Increasing model complexity therefore only provides a moderate increase in generalizability to unknown data.
 
 <p align="center">
-  <img src="https://github.com/yjc1989/NBA-HOF/blob/master/FINAL/figures/neural-network/NNVC.png?raw=true" alt="Centered Image"/>
+  <img src="https://github.com/yjc1989/NBA-HOF/blob/master/figures/neural-network/NNVC.png?raw=true" alt="Centered Image"/>
 </p>
 
 This is not a great surprise, we learn from logistic regression that a simple model can have remarkably good performance. A more complex model will potentially suffer from overfitting. Comparing our intuition with the neural network's prediction, we see some heuristic signs of overfitting. Some players in the twilight of their careers, such as Carmelo Anthony, Pau Gasol and Vince Carter, who most NBA enthusiasts consider sure-thing future Hall of Famers, are not predicted to make it, while young talents like Anthony Davis are considered already qualified for HOF status. 
@@ -232,7 +232,7 @@ This is not a great surprise, we learn from logistic regression that a simple mo
 We perform PCA on our training and test data to identify structure when we group players by HOF status. By selecting pairs of components from the top five principle components we retain as much variance as possible while allowing for some freedom in choosing how to regard the data. 
 
 <p align="center">
-  <img src="https://github.com/yjc1989/NBA-HOF/blob/master/FINAL/figures/neural-network/two-rep-feature.png?raw=true" alt="Centered Image"/>
+  <img src="https://github.com/yjc1989/NBA-HOF/blob/master/figures/neural-network/two-rep-feature.png?raw=true" alt="Centered Image"/>
 </p>
 
 Several players in both the training and test data distinguish themselves in a dramatic way - we consider these players to be 'legendary,' achieving singularly fantastic careers.  We label these players on the figure by name. Apart from those players there is no natural splitting of classes using PCA. This, combined with the fact that a simple threshold based solely on the 'AllStar' feature does split the classes up very well indicates to us that the addition of other basketball statistics impedes the performance of a classifier. That is to say, the additional information we get from using all available measures of performance is outweighed by the dilution of structure generated by the high dimensionality of the feature space. Nevertheless, the neural network shows signs of learning the subtleties of the distribution of players by HOF status, and thus we believe that additional training data would improve this model significantly.
