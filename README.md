@@ -223,7 +223,7 @@ To replicate the complex decision making that goes on between the many humans an
 We construct validation curves for varying depth and sigmoid neurons per layer and find that there is not much improvement in F1 score as we turn up the model complexity. The training F1 score saturates very quickly, which indicates that even the simplest neural network with one layer is fitting the training data very well. Increasing model complexity therefore only provides a moderate increase in generalizability to unknown data.
 
 <p align="center">
-  <img src="https://github.com/yjc1989/NBA-HOF/blob/master/figures/neural-network/NNVC.png?raw=true" alt="Centered Image"/>
+  <img src="https://github.com/yjc1989/NBA-HOF/blob/master/figures/neural-network-pca/NNVC.png?raw=true" alt="Centered Image"/>
 </p>
 
 This is not a great surprise, we learn from logistic regression that a simple model can have remarkably good performance. A more complex model will potentially suffer from overfitting. Comparing our intuition with the neural network's prediction, we see some heuristic signs of overfitting. Some players in the twilight of their careers, such as Carmelo Anthony, Pau Gasol and Vince Carter, who most NBA enthusiasts consider sure-thing future Hall of Famers, are not predicted to make it, while young talents like Anthony Davis are considered already qualified for HOF status. 
